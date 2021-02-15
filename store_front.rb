@@ -1,3 +1,4 @@
+
 puts "Hello whats your name:"
 name = gets.chomp
 
@@ -39,12 +40,15 @@ cart.each do |item|
   print "*"
   puts "#{item}"
 end
-if !error_cart.empty? do
+
+
+if !error_cart.empty? 
   puts "\nBtw, we noticed you tried entering in some items that aren't part of the online Store. We don't have the following items yet but will let you know if they show up!:"
 
   error_cart.each do |item|
     print "*"
     puts "#{item}"
   end
+
 end
-end
+
