@@ -1,6 +1,6 @@
 
 puts "Welcome to rock paper scissors \nToday we will be playing best three out of five\n\n"
-cpu_choices = ["r","p","s"]
+cpu_choices = ["rock","paper","scissors"]
 round_count = 1
 cpu_win_count =0
 user_win_count = 0
@@ -11,8 +11,10 @@ while user_win_count != 3 && cpu_win_count != 3
   puts "Lets get round #{round_count} started"
   puts "Please enter your choice \nType in r for rock, p for paper, and s for scissors\n\n"
 
+ 
   user_choice = gets.chomp
-  cpu_choice = cpu_choices[rand(3)]
+  random_choice = cpu_choices[rand(3)]
+  cpu_choice =random_choice[0]
 
   while user_choice != 'r'&& user_choice != 'p' && user_choice != 's'
     puts "Sorry " + user_choice +" is an invalid entry\nPlease enter 'r' for rock, 'p' for p or 's' for scissors\n\n"
@@ -21,23 +23,23 @@ while user_win_count != 3 && cpu_win_count != 3
 
 
   if cpu_choice == user_choice
-     puts "This round is a draw. \nYou chose:" + user_choice+ " and the cpu chose:" +cpu_choice+ "\n\n"
+     puts "This round is a draw. \nYou chose:" + user_choice+ " and the cpu chose: " +random_choice+ "\n\n"
      round_count += 1
    else
 
     if cpu_choice == 'r' && user_choice == 'p'
-      puts "You win this round \nYou chose: "+user_choice+ "aper and the cpu chose:" +cpu_choice+ "ock\n\n"
+      puts "You win this round \nYou chose: "+user_choice+ "aper and the cpu chose: " +cpu_choice+ "ock\n\n"
       user_win_count +=1
       round_count += 1
 
 
     elsif cpu_choice == 'p' && user_choice == 's'
-      puts "You win this round \nYou chose: "+user_choice+ "cissors and the cpu chose:" +cpu_choice+ "aper\n\n"
+      puts "You win this round \nYou chose: "+user_choice+ "cissors and the cpu chose: " +cpu_choice+ "aper\n\n"
       user_win_count +=1
       round_count += 1
 
     elsif cpu_choice == 's' && user_choice == 'r'
-      puts "You win this round \nYou chose: "+user_choice+ "ock and the cpu chose:" +cpu_choice+ "cissors\n\n"
+      puts "You win this round \nYou chose: "+user_choice+ "ock and the cpu chose: " +cpu_choice+ "cissors\n\n"
       user_win_count +=1
       round_count += 1
 
