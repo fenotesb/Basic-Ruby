@@ -2,7 +2,7 @@ puts "Hello whats your name:"
 name = gets.chomp
 
 
-items = ["potato","red onion","dried lemon","frankincense","moon dust","saffron","glass spice jar","red fabric","orange fabric","handicrafts","small persian rug","used medium space suit","heffalump shag rug","woozle hide purse"]
+items = ["potato","milk","egg","red onion","dried lemon","frankincense","moon dust","saffron","glass spice jar","red fabric","orange fabric","handicrafts","small persian rug","used medium space suit","heffalump shag rug","woozle hide purse"]
 
 puts "\nWelcome to my store #{name}\n\nHere is a list of items we have for you to purchase\n------------------------------------------------------------\n"
 items.each do |item|
@@ -21,7 +21,7 @@ while true  do
   if user_input == "done"
     break
   elsif true == items.include?(user_input)
-    puts "\nWe have plenty of #{user_input}s. \nPlease contuine if you want to add something else"
+    puts "\nWe have plenty of #{user_input}. \nPlease enter any button to contuine if you want to add something else"
     cart.push(user_input)
   else
     puts "Sorry we dont have any #{user_input}. \nPlease enter something else and remeber to enter 'done' when your finished"
