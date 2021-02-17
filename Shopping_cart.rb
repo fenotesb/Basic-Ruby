@@ -6,14 +6,14 @@ while true do
   puts "Whats the name of your item?"
   item_name = gets.chomp
 
-  puts "How many #{item_name}[s] would you like to add?"
+  puts "How much #{item_name} would you like to add to your cart?"
   if number_of_products[item_name].nil?
     number_of_products[item_name] =  0
   end
   number_of_products[item_name] +=  gets.chomp.to_i
 
   if prices[item_name].nil?
-    puts "Whats the price of a #{item_name}?"
+    puts "What's the price of #{item_name}?"
     prices[item_name] = gets.chomp.to_f
   end
 
