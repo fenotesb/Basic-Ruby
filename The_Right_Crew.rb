@@ -17,7 +17,7 @@ avaiable_members = [
 
 random_members_chosen = avaiable_members.sample(Required_crew_size)
 
-puts "\*\*\*Automated Flight Crew Advice:\*\*\*"
+puts "\****\Automated Flight Crew Advice:\****\"
 
 random_members_chosen.each do |chosen_one|
   puts "Use the #{chosen_one.to_s.gsub("\_", " ")}!"
