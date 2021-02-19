@@ -17,4 +17,4 @@ if yes_no == 'y'
   end
 end
 
-puts "Thanks for playing \nCome Back soon!!!"
+puts "Thanks for playing \nCome Back soon!!"
