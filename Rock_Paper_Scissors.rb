@@ -8,7 +8,7 @@ user_win_count = 0
 
 while user_win_count != 3 && cpu_win_count != 3
 
-  puts "Lets get round #{round_count} started"
+  puts "Let's get round #{round_count} started"
   puts "Please enter your choice \nType in r for rock, p for paper, and s for scissors\n\n"
 
  
