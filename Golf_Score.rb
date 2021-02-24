@@ -39,4 +39,4 @@ else
   over_under = "under"
   par = par *-1
 end
-puts "Score: #{par} #{over_under} par!!!"
+puts "Score: #{par} #{over_under} par!"
