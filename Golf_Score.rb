@@ -28,7 +28,7 @@ game_stats.each do |hash_data|
 end
 
 puts "Total Strokes: #{point_total} "
-puts "Total Par #{par_total}"
+puts "Total Par: #{par_total}"
 
 par = point_total - par_total
 
