@@ -34,9 +34,9 @@ par = point_total - par_total
 
 over_under = " "
 if par >= 0
-  over_under = "over"
+  over_under = "over "
 else
-  over_under = "under"
+  over_under = "under "
   par = par *-1
 end
-puts "Score: #{par} #{over_under} par!"
+puts "Score: #{par} #{over_under}par!"
