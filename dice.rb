@@ -1,11 +1,12 @@
 puts "Welcome to my dice game\nWould you like to play? \nPlease input 'y' for yes or 'n' for no"
 
 yes_no = gets.chomp
-
+#if user doesnt input a y or n the while loop will not move one
 while yes_no != 'y' && yes_no != 'n'
   puts "Sorry thats an invalid input please try again"
   yes_no = gets.chomp
 end
+#if user doesn't enter key word S to stop program will run as planned 
 if yes_no == 'y'
   roll = nil
   while roll != 'S'
