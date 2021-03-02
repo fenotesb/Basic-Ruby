@@ -1,11 +1,13 @@
 #require 'pry'
 puts "Welcome to my Guessing Game\nWould you like to play? \nPlease input 'y' for yes or 'n' for no"
 yes_no = gets.chomp
+#used a while loop to direct user input to y or n
 while yes_no != 'y' && yes_no != 'n'
   puts "Sorry this input is invaild please try using 'y' for yes and 'n' for no"
   yes_no = gets.chomp
 end
 easy_hard = nil
+#used if statment for easy and hard versions of the game 
 if yes_no == 'y'
   puts "Would you like to play an easy or hard version? \nPlease enter 'e' for easy or 'h' for hard"
   easy_hard = gets.chomp
@@ -33,5 +35,6 @@ if yes_no == 'y'
   end
   puts "You got it!!! \nThe cpu guessed #{user_guess} \nThanks for playing"
 else
+  #used else incase user selects no 
   puts "Sorry you don't want to play come back soon!"
 end
