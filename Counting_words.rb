@@ -30,6 +30,8 @@ puts count_of_word_map.sort.reverse.inspect
 
 count_of_words = 0
 #returns the top words used
+
+puts "List of top used words \n----------------------"
 sorted_list_of_words = count_of_word_map.sort.reverse
 sorted_list_of_words.each do |count|
   if count_of_words <=2
