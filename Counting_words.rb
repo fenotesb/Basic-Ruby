@@ -42,3 +42,20 @@ sorted_list_of_words.each do |count|
     end
   end
 end
+#how many vowels are used?
+characters = stripped_text.split('')
+
+vowels_freq = {}
+
+characters.each do |character|
+  if character == 'a' || character == 'e' || character == 'o' || character == 'i' || character == 'o'
+
+    if vowels_freq[character].nil?
+      vowels_freq[character] = 0
+    end
+    vowels_freq[character] +=1
+  end
+end
+vowels_freq.each do |character, freq |
+  puts "There are #{freq} #{character}'s'"
+end
