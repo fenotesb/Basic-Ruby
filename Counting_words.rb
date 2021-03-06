@@ -59,3 +59,39 @@ end
 vowels_freq.each do |character, freq |
   puts "There are #{freq} #{character}'s'"
 end
+
+#what is the most frequencies used vowl
+ max = -1
+ vowels_freq.each do |character, freq|
+   if freq > max
+     max = freq
+   end
+ end
+
+puts "#{vowels_freq.invert[max]} is the most used vowel."
+
+sum = 0
+ puts average_vowel = vowels_freq.values
+
+ average_vowel.each do |freq|
+   sum += freq
+ end
+
+puts "#{sum/average_vowel.size.to_f} is the average frequency of the vowels "
+#how many punctuations are in the text
+punctuation_freq = {}
+
+punctuation = [",",".","/"]
+
+
+punctuation.each do |punctuations|
+  downcased_text.split('').each do |char|
+    if char == punctuations
+      if punctuation_freq[char].nil?
+        punctuation_freq[char] = 0
+      end
+      punctuation_freq[char] +=1
+    end
+  end
+end
+puts punctuation_freq.inspect
