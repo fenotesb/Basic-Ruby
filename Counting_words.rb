@@ -26,12 +26,11 @@ word_count.each do |word, count|
   end
   count_of_word_map[count].push(word)
 end
-puts count_of_word_map.sort.reverse.inspect
+count_of_word_map.sort.reverse.inspect
 
 count_of_words = 0
 #returns the top words used
-
-puts "List of top used words \n----------------------"
+puts "\nList of top used words \n----------------------"
 sorted_list_of_words = count_of_word_map.sort.reverse
 sorted_list_of_words.each do |count|
   if count_of_words <=2
@@ -42,6 +41,7 @@ sorted_list_of_words.each do |count|
     end
   end
 end
+
 #how many vowels are used?
 characters = stripped_text.split('')
 
@@ -56,8 +56,9 @@ characters.each do |character|
     vowels_freq[character] +=1
   end
 end
+puts " "
 vowels_freq.each do |character, freq |
-  puts "There are #{freq} #{character}'s'"
+  puts "There are #{freq} #{character}'s"
 end
 
 #what is the most frequencies used vowl
@@ -68,10 +69,10 @@ end
    end
  end
 
-puts "#{vowels_freq.invert[max]} is the most used vowel."
+puts "\n#{vowels_freq.invert[max]} is the most used vowel."
 
 sum = 0
- puts average_vowel = vowels_freq.values
+average_vowel = vowels_freq.values
 
  average_vowel.each do |freq|
    sum += freq
@@ -95,3 +96,7 @@ punctuation.each do |punctuations|
   end
 end
 puts punctuation_freq.inspect
+
+punctuation_freq.each do |character, freq |
+  puts "There are #{freq} #{character}"
+end
