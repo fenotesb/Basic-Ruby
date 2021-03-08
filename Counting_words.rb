@@ -95,7 +95,7 @@ punctuation.each do |punctuations|
     end
   end
 end
-puts punctuation_freq.inspect
+
 
 punctuation_freq.each do |character, freq |
   puts "There are #{freq} #{character}"
