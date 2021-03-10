@@ -1,3 +1,4 @@
+#hash of people
 people = [
   { name: "George Michael Bluth", age: 18, eye_color: "brown", hometown: "Newport Beach"},
   { name: "Lindsay Bluth Funke",  age: 36, eye_color: "blue",  hometown: "Newport Beach" },
@@ -6,7 +7,7 @@ people = [
   { name: "GOB Bluth",            age: 38, eye_color: "brown", hometown: "Newport Beach" },
   { name: "Tobias Funke",         age: 43, eye_color: "brown", hometown: "Boston" }
 ]
-
+#hash of hashes to answer questions
 people_statistics ={
   age:  { over_twenty: 0,  under_twenty: 0},
   eye_color:  { blue: 0, green: 0, brown: 0   },
@@ -33,7 +34,7 @@ people.each do |person|
       people_statistics[:hometown][:Boston] +=1
     end
   end
-
+#answers to questions about the people using a hash of hashes data structure 
 puts "People Statistics\n\nAge"
 people_statistics[:age].each do |key, vaule|
   puts "#{key} : #{vaule}"
