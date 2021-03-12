@@ -44,17 +44,21 @@ num_of_people = 0
 people.each do |person, key|
   num_of_people +=1
 end
-puts "There are #{num_of_people} in the database"
+puts "There are #{num_of_people} people in the database"
 
 #What are the names of all the people
-
+counter = 0
 names = []
 print "The names of the people in the database are "
 people.each do |person, key|
   names.push(person)
-  print "#{person} "
+  counter +=1
+  if counter <4
+    print "#{person}, "
+  elsif counter == 4
+    print "and #{person}."
+  end
 end
-#puts names.inspect
 
 #What is the phone number of Alia O'Conner PhD?
 puts "\nAlia O'Conner PhD phone number is #{people["Alia O'Conner PhD"]["phone"]}"
@@ -104,7 +108,6 @@ people_info =
 # High School %: 20.0
 # Did Not Finish High School %: 10.0
 #
-number_of_people_in_hash = people_info.length
 total_income = 0.0
 num_Female = 0.0
 num_Unspecified = 0.0
@@ -160,3 +163,4 @@ puts "College % : #{(college_grad/people_info.length)*100}"
 puts "Highschool % : #{(highschool_grad/people_info.length)*100}"
 
 puts "Did Not Finish % : #{(did_Not_Finish/people_info.length)*100}"
+
