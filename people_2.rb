@@ -39,7 +39,7 @@ people =
   }
 }
 
-#How many people are in people
+#How many people are in people?
 num_of_people = 0
 people.each do |person, key|
   num_of_people +=1
