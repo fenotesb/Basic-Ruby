@@ -39,14 +39,14 @@ people =
   }
 }
 
-#How many people are in people?
+#How many people are in hash?
 num_of_people = 0
 people.each do |person, key|
   num_of_people +=1
 end
 puts "There are #{num_of_people} people in the database"
 
-#What are the names of all the people
+#What are the names of all the people in the hash?
 counter = 0
 names = []
 print "The names of the people in the database are "
