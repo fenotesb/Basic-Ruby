@@ -67,7 +67,7 @@ puts "\nAlia O'Conner PhD phone number is #{people["Alia O'Conner PhD"]["phone"]
 
 puts "Brian Heller has #{number_of_childern = people["Brian Heller"]["children"].length()} child"
 
-#What company does Dr. Adela DuBuque work for?
+#What company does Dr.Adela DuBuque work for?
 
 puts "Dr. Adela DuBuque works for #{people["Dr. Adela DuBuque"]["company"]}"
 
