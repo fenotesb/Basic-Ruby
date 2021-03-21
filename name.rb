@@ -1,3 +1,5 @@
+
+#This is an example of me using a method
 def solicit_name
   puts "Please share the person's name:"
 end
