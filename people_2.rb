@@ -1,3 +1,4 @@
+#Example with hashs
 people =
 {
   "Alia O'Conner PhD" => {
