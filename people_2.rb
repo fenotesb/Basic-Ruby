@@ -145,7 +145,7 @@ people_info.each do |person|
 end
 
 
-puts "\nThese are the statistics for the second data set of people "
+puts "\nThese are the statistics for the second set of people "
 
 puts "Average Age: #{sum_of_people_ages/people_info.length}"
 
