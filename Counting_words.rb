@@ -61,7 +61,7 @@ vowels_freq.each do |character, freq |
   puts "There are #{freq} #{character}'s"
 end
 
-#what is the most frequencies used vowl
+#what is the most frequencies used vowl?
  max = -1
  vowels_freq.each do |character, freq|
    if freq > max
@@ -79,7 +79,7 @@ average_vowel = vowels_freq.values
  end
 
 puts "#{sum/average_vowel.size.to_f} is the average frequency of the vowels "
-#how many punctuations are in the text
+#how many punctuations are in the text?
 punctuation_freq = {}
 
 punctuation = [",",".","/"]
