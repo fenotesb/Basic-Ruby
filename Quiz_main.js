@@ -47,12 +47,20 @@ for (let i = 0; i < arraylength; i++);
 }
 
 let team_one_avg_score = team_one_score/(arraylength/2);
-console.log("This is team one's average score",team_one_avg_score)
+//console.log("This is team one's average score",team_one_avg_score)
+
+alert("This is team one's average score",team_one_avg_score);
 
 let team_two_avg_score = team_two_score/(arraylength/2);
-console.log("This is team two's average score:", team_two_avg_score)
+//console.log("This is team two's average score:", team_two_avg_score)
+
+prompt("This is team two's average score:", team_two_avg_score);
 
 let total_average = team_two_score/arraylength;
-console.log("This is team one's and two's average score combined:", total_average)
+//console.log("This is team one's and two's average score combined:", total_average)
 
-console.log("This is the number of Students who passed the exam: ",num_of_pasing_grades )
+prompt("This is team one's and two's average score combined:", total_average);
+
+prompt("This is the number of Students who passed the exam: ",num_of_pasing_grades );
+
+//console.log("This is the number of Students who passed the exam: ",num_of_pasing_grades )
