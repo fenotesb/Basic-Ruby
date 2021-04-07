@@ -31,9 +31,8 @@ let arraylength = scores.length;
 
 let dividing_point = (arraylength/2)-1;
 
-for (let i = 0; i < arraylength; i++);
+for (let i = 0; i < arraylength; i++)
 {
-
 
   if (scores[i] >= 70)
   {
@@ -46,21 +45,19 @@ for (let i = 0; i < arraylength; i++);
     team_two_score +=scores[i];
 }
 
-let team_one_avg_score = team_one_score/(arraylength/2);
-//console.log("This is team one's average score",team_one_avg_score)
+}
 
-alert("This is team one's average score",team_one_avg_score);
+let team_one_avg_score = team_one_score/(arraylength/2);
+
+alert("Team one's average score is: "+ team_one_avg_score.toString());
 
 let team_two_avg_score = team_two_score/(arraylength/2);
-//console.log("This is team two's average score:", team_two_avg_score)
 
-prompt("This is team two's average score:", team_two_avg_score);
 
-let total_average = team_two_score/arraylength;
-//console.log("This is team one's and two's average score combined:", total_average)
+alert("Team two's average score is: " + team_two_avg_score.toString());
 
-prompt("This is team one's and two's average score combined:", total_average);
+let total_average = (team_two_avg_score+team_one_avg_score)/2;
 
-prompt("This is the number of Students who passed the exam: ",num_of_pasing_grades );
+alert("Team one's and two's average score combined is: " + total_average.toString());
 
-//console.log("This is the number of Students who passed the exam: ",num_of_pasing_grades )
+alert("The number of Students who passed the exam is: "+num_of_pasing_grades.toString() );
