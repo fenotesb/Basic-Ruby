@@ -8,7 +8,8 @@ Hint: The formula for calculating a rectangle's perimeter is as follows: p = 2 *
 
 let perimeter = (width , height) => {
 
-  p = (width * 2) + (height *2);
+  let p = (width * 2) + (height *2);
+
 
   return p;
 }
@@ -17,14 +18,18 @@ let w = 0;
 let h = 0;
 
 
-let message1 = "What is the heigth and weight of your rectangle?";
+let message1 = "What is the heigth of your rectangle?";
 
-let message2 = "What is the heigth and heigth of your rectangle?";
+let message2 = "What is the length of your rectangle?";
 
-prompt(message1,w);
+w = prompt(message1);
 
-prompt(message2,h);
 
-let p = perimeter(w,h);
 
-prompt(p);
+h = prompt(message2);
+
+
+
+let pfinal = perimeter(Number(w),Number(h));
+
+alert("This is your rectangle perimeter: "+pfinal.toString());
