@@ -23,6 +23,8 @@ ans = []
 nums = [2,7,11,15]
 target = 9
 i =0
+
+
 nums.each do |num|
     hash[i] = target - num
     i +=1
@@ -34,4 +36,4 @@ nums.each do |num|
     end
 end
 
-puts "Your answer is #{ans[0]} and #{ans[1]} "
+puts "Your answer in index form is #{ans[0]} and #{ans[1]} "
