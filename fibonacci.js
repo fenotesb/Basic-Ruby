@@ -1,4 +1,4 @@
-//This code recreates the Fibonacci sequence. The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers, 
+//This code recreates the Fibonacci sequence. The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers.
 
 let fibonacci = (n) => {
    let second_to_last_num = 0;
