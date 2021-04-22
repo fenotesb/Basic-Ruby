@@ -1,3 +1,4 @@
+// showing the use of classes
 let batman = {
   firstName: 'Bruce',
   lastName: 'Wayne',
