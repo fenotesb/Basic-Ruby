@@ -6,7 +6,7 @@ let butter = {itemName: 'stick of butter', quantitiy: 1}
 let cheese = {itemName: 'lb of cheese', quantitiy: 1}
 
 
-let shoppingCart = [eggs, milk, bread, butter]
+let shoppingCart = [eggs, milk, bread, butter,cheese]
 
 shoppingCart.forEach((item) => {
   console.log(item.quantity + " " + item.itemName)
